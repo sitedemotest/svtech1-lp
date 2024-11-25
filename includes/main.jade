@@ -1,0 +1,143 @@
+include _header.jade
+<div class="top_image_block" style="background-image: url(img/top_bg.jpg);">
+    <div class="block_inner">
+        <div class="title">Скупка комплектующих для ПК</div>
+        <div class="text">Скупаем по самым выгодным ценам!</div>
+    </div>
+    <a href="#scroll_block" class="button_id scroll_btn"></a>
+</div>
+<div id="scroll_block" class="form_block_wrap">
+    <div class="block_inner">
+        <form action="">
+            <div class="title">Хотите продать свои комплектующие для компьютера?</div>
+            <div class="text">Оставьте заявку и мы свяжемся с вами в ближайшее время!</div>
+            <div class="coll">
+                <div class="field">
+                    <input type="text" placeholder="Ваш номер телефона">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Комментарий">
+                </div>
+                <div class="field file">
+                    <label>
+                        <input type="file">
+                        <span class="file_field">Загрузить фото</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button_center">
+                <button type="submit" class="wpcf7-form-control wpcf7-submit has-spinner btn_button" value="Отправить"><span>Оставить заявку</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="preim" class="preim_block_wr">
+    <div class="block_inner">
+        <div class="title">Преимущества работы с нами</div>
+        <div class="inner">
+            <div class="item neon-shadow">
+                <div class="icon">
+                    <img src="img/preim.svg" alt="">
+                </div>
+                <div class="name">Онлайн оценка стоимости</div>
+                <div class="text">Вы присылаете фото, мы оцениваем</div>
+            </div>
+            <div class="item neon-shadow">
+                <div class="icon">
+                    <img src="img/preim2.svg" alt="">
+                </div>
+                <div class="name">Даём лучшую цену</div>
+                <div class="text">Мы предлагаем самые выгодные цены для выкупа</div>
+            </div>
+            <div class="item neon-shadow">
+                <div class="icon">
+                    <img src="img/preim3.svg" alt="">
+                </div>
+                <div class="name">Быстрая оплата</div>
+                <div class="text">Мы выдаём деньги сразу, наличными или на карту</div>
+            </div>
+            <div class="item neon-shadow">
+                <div class="icon">
+                    <img src="img/preim4.svg" alt="">
+                </div>
+                <div class="name">Выезд оценщика</div>
+                <div class="text">Бесплатный выезд оценщика по Санкт-Петербургу</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" class="about_block_wr">
+    <div class="block_inner">
+        <div class="title">Скупка комплектующих в СПБ (H1)</div>
+        <div class="inner">
+            <div class="text">
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.  </p>
+                <p>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. </p>
+            </div>
+            <div class="right">
+                <img src="img/imag_a.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="products" class="slider_block_pr">
+    <div class="swiper_arrow">
+        <div class="swiper_arrow_btn swiper-prev swiper-pr-prev"></div>
+        <div class="swiper_arrow_btn swiper-next swiper-pr-next"></div>
+    </div>
+    <div class="block_inner">
+        <div class="title">Наши последние покупки</div>
+        <div class="inner">
+            <div class="swiper mySwiper_pr" data-id="mySwiper_pr" data-arrow="pr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        include product-item.jade
+                    </div>
+                    <div class="swiper-slide">
+                        include product-item.jade
+                    </div>
+                    <div class="swiper-slide">
+                        include product-item.jade
+                    </div>
+                    <div class="swiper-slide">
+                        include product-item.jade
+                    </div>
+                    <div class="swiper-slide">
+                        include product-item.jade
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="order_form" class="form_block_bottom">
+    <div class="block_inner">
+        <form action="">
+            <div class="title">Хотите продать комплектующие по выгодной цене?</div>
+            <div class="text">Оставьте заявку и мы свяжемся с вами в ближайшее время!</div>
+            <div class="coll">
+                <div class="field">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Ваш номер телефона">
+                </div>
+                <div class="field file">
+                    <label>
+                        <input type="file">
+                        <span class="file_field">Загрузить фото</span>
+                    </label>
+                </div>
+            </div>
+            <div class="coll_2">
+                <div class="field">
+                    <input type="text" placeholder="Комментарий">
+                </div>
+                <button type="submit" class="wpcf7-form-control wpcf7-submit has-spinner btn_button" value="Отправить"><span>Оставить заявку</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+include _footer.jade
