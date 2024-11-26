@@ -1304,6 +1304,10 @@ img, textarea, input, table {
                         display: inline-block;
                         vertical-align: top;
 
+                        @media all and (max-width: 1400px){
+                            margin: 0 8px;
+                        }
+
                         a {
                             display: inline-block;
                             vertical-align: top;
@@ -1313,6 +1317,10 @@ img, textarea, input, table {
                             color: #fff;
                             transition: all .3s;
                             text-decoration: none;
+
+                            @media all and (max-width: 1400px){
+                                font-size: 14px;
+                            }
 
                             &:hover {
                                 color: #ffbd00;
