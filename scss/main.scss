@@ -675,7 +675,7 @@ img, textarea, input, table {
 
     @media all and (max-width: 767px){
         font-size: 14px;
-        padding: 14px 20px;
+        //padding: 14px 20px;
     }
 
     span {
@@ -764,7 +764,7 @@ img, textarea, input, table {
         margin-right: 50px;
         white-space: nowrap;
 
-        @media all and (max-width: 1280px) {
+        @media all and (max-width: 1440px) {
             margin-right: 16px;
         }
 
@@ -919,14 +919,6 @@ img, textarea, input, table {
                             gap: 30px;
 
                             @media all and (max-width: 1480px){
-                                gap: 20px;
-                            }
-
-                            @media all and (max-width: 1310px){
-                                gap: 16px;
-                            }
-
-                            @media all and (max-width: 1180px){
                                 gap: 10px;
                             }
 
@@ -943,7 +935,7 @@ img, textarea, input, table {
                                 text-decoration: none;
                                 transition: all 0.3s;
 
-                                @media all and (max-width: 1310px){
+                                @media all and (max-width: 1440px){
                                     padding: 20px 10px;
                                     font-size: 14px;
                                 }
@@ -1039,7 +1031,7 @@ img, textarea, input, table {
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.7);
     }
 
     .block_inner {
@@ -1070,6 +1062,10 @@ img, textarea, input, table {
             text-align: center;
             color: #fff;
             text-shadow: 0 2px 30px #fc9f01;
+        }
+
+        @media all and (max-width: 1400px) {
+            min-height: 600px;
         }
 
         @media all and (max-width: 1024px) {
@@ -1311,11 +1307,12 @@ img, textarea, input, table {
                         a {
                             display: inline-block;
                             vertical-align: top;
-                            text-decoration: none;
-                            font-weight: 400;
+                            font-weight: 600;
                             font-size: 15px;
+                            text-transform: uppercase;
                             color: #fff;
                             transition: all .3s;
+                            text-decoration: none;
 
                             &:hover {
                                 color: #ffbd00;
@@ -1467,12 +1464,22 @@ img, textarea, input, table {
         transition: all .3s;
 
         &.swiper-prev {
-            left: 20px;
+            left: 5%;
         }   
 
         &.swiper-next {
-            right: 20px;
+            right: 5%;
             transform: rotate(180deg);
+        }
+
+        @media all and (max-width: 1800px) {
+                &.swiper-prev {
+                    left: 20px;
+                }   
+
+                &.swiper-next {
+                    right:20px;
+                }
         }
 
         &:hover {
